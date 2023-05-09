@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Kaisei+HarunoUmi&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111010;
+  color: #ffffff;
+  font-family: "Kaisei HarunoUmi", sans-serif;
+  margin: 8rem 30rem 8rem 15rem;
+  display: flex;
+  flex-direction: row;
+  max-width: 56rem;
+}
+
+/* NAV MENU SECTION - LOGO and NAV-BAR */
+
+.nav-menu {
+  margin-top: -1rem;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-family: "Cinzel Decorative";
+  margin-bottom: 1.5rem;
+}
+
+.nav-bar ul {
+  list-style: none;
+  font-weight: 700;
+}
+
+.nav-bar ul li {
+  color: #4e4e4e;
+  margin: 0.6rem 0rem;
+}
+
+.nav-bar ul li:hover {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.nav-bar ul .active {
+  color: #ffffff;
+  border: 1px solid #262626;
+  border-radius: 10px;
+  background-color: #262626;
+  padding: 0.2rem 1rem;
+  width: max-content;
+  margin-left: -1rem;
+}
+
+/* END OF NAV MENU SECTION - LOGO and NAV-BAR */
+
+/* INDEX.HTML -- HOME PAGE */
+
+.home {
+  margin-left: 5rem;
+}
+
+.home h1 {
+  font-weight: 500;
+}
+
+.home .center-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.home .center-section .link-list {
+  font-family: "Segoe UI Symbol";
+  margin: 1rem 0rem 1rem 3rem;
+  list-style: none;
+}
+
+.home .center-section .link-list li a {
+  text-decoration: none;
+  color: #a3a3a3;
+}
+
+.home .center-section .link-list li a :hover {
+  color: #ffffff;
+}
+
+.home .center-section .link-list li span {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem 0rem;
+}
+
+.home .center-section .link-list li a i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.home p {
+  margin: 1.5rem 0rem;
+  color: #e5e5e5;
+  font-family: "Segoe UI Symbol";
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.home img {
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+}
+
+/* END OF INDEX.HTML -- HOME PAGE */
+
+/* responsive */
+
+@media screen and (max-width: 1500px) {
+  body {
+    margin: 4rem 8rem;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    flex-direction: column;
+    margin: 2rem 4rem;
+    padding-right: 4rem;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-bar ul li {
+    margin-right: 0.8rem;
+  }
+
+  .home {
+    margin-left: 0;
+  }
+}
