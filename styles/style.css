@@ -55,17 +55,18 @@ body {
   font-weight: 700;
 }
 
-.nav-bar ul li {
+.nav-bar ul li a {
+  text-decoration: none;
   color: var(--nav-grey);
   margin: 0.6rem 0rem;
 }
 
-.nav-bar ul li:hover {
+.nav-bar ul li a:hover {
   cursor: pointer;
   color: var(--white);
 }
 
-.nav-bar ul .active {
+.nav-bar ul li.active {
   color: var(--white);
   border: 1px solid var(--hover-grey);
   border-radius: 5px;
@@ -73,6 +74,10 @@ body {
   padding: 0.2rem 1rem;
   width: max-content;
   margin-left: -1rem;
+}
+
+.nav-bar ul li.active a {
+  color: var(--white);
 }
 
 /* END OF NAV MENU SECTION - LOGO and NAV-BAR */
