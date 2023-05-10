@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Kaisei+HarunoUmi&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata&display=swap");
 
 * {
   margin: 0;
@@ -24,6 +25,7 @@
   --logo: "Cinzel Decorative";
   --heading: "Kaisei HarunoUmi";
   --text: "Segoe UI Symbol";
+  --tech-stack: "Inconsolata";
 }
 
 body {
@@ -93,6 +95,10 @@ body {
   line-height: 1.5rem;
 }
 
+hr {
+  border: 0.1px solid var(--divider-grey);
+}
+
 /* END OF MAIN SECTION - Common to all pages  */
 
 /* INDEX.HTML -- HOME PAGE */
@@ -145,8 +151,22 @@ body {
 
 /* END OF INDEX.HTML -- HOME PAGE */
 
-.about hr {
-  border: 0.1px solid var(--divider-grey);
+/* ABOUT.HTML */
+
+.about .education {
+  display: flex;
+  flex-direction: row;
+  margin: 1.2rem 0rem;
+  justify-content: space-between;
+}
+
+.about h4 {
+  margin-top: 1rem;
+  font-weight: 400;
+}
+
+.about .education p {
+  margin: 0rem 2rem 0rem 0rem;
 }
 
 .about .social-buttons {
@@ -168,6 +188,7 @@ body {
 
 .about .social-buttons button:hover {
   background-color: var(--button-hover-grey);
+  cursor: pointer;
 }
 
 .about .social-buttons button i.fa-brands {
@@ -175,21 +196,33 @@ body {
   font-size: 1.2rem;
 }
 
-.about .education {
-  display: flex;
-  flex-direction: row;
-  margin: 1.2rem 0rem;
-}
-
-.about .education p {
-  margin: 0rem 2rem 0rem 0rem;
-}
-
-/* ABOUT.HTML */
-
 /* END OF ABOUT.HTML */
 
 /* WORK.HTML  */
+
+.work .job-header {
+  margin: 1.2rem 0rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.work .job-header p {
+  margin: 0rem 2rem 0rem 0rem;
+}
+
+.work .job-content {
+  font-family: var(--text);
+  font-weight: 300;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--list-white);
+}
+
+.work .job-content ul li {
+  margin-bottom: 0.5rem;
+}
 
 /* END OF WORK.HTML  */
 
@@ -207,7 +240,7 @@ body {
 
 /* BREAK POINT - decrease margin at 1280px */
 
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1332px) {
   body {
     margin: 4rem 8rem;
     padding-right: 4rem;
@@ -228,6 +261,11 @@ body {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     margin-bottom: 1rem;
+  }
+
+  .work .job-header {
+    flex-direction: column;
+    align-items: normal;
   }
 
   /* end of about */
