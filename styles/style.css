@@ -529,10 +529,11 @@ hr {
     display: flex;
     flex-direction: row;
     font-size: 0.8rem;
+    margin-left: -0.5rem;
   }
 
   .nav-bar ul li {
-    margin-right: 0.8rem;
+    margin-right: 0.4rem;
   }
 
   .nav-bar ul li.active {
