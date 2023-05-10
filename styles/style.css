@@ -228,6 +228,57 @@ hr {
 
 /* SKILLS.HTML  */
 
+.skills .skill-row {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0rem;
+  justify-content: space-between;
+}
+
+.skills .skill-col {
+  border: 1px solid var(--button-border-grey);
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+.skills .skill-col h3 {
+  margin-bottom: 1rem;
+  font-family: var(--text);
+  font-weight: 300;
+}
+
+.skills .skill-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--text);
+  width: 18rem;
+  margin: 0.5rem 0rem;
+}
+
+.skills .skill-bar .skill-level {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills .dot {
+  margin: 0rem 0.2rem;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: var(--nav-grey);
+}
+
+.skills .fill {
+  margin: 0rem 0.2rem;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: var(--text-white);
+}
+
 /* END OF SKILLS.HTML  */
 
 /* PROJECTS.HTML  */
@@ -266,6 +317,15 @@ hr {
   .work .job-header {
     flex-direction: column;
     align-items: normal;
+  }
+
+  .skills .skill-row {
+    flex-direction: column;
+  }
+
+  .skills .skill-col {
+    max-width: 20rem;
+    margin-bottom: 1rem;
   }
 
   /* end of about */
