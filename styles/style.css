@@ -283,6 +283,109 @@ hr {
 
 /* PROJECTS.HTML  */
 
+.projects {
+  margin-top: 1rem;
+}
+
+.projects .project-left {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid var(--button-border-grey);
+  border-radius: 5px;
+  align-items: center;
+  width: 35rem;
+  margin-bottom: 0.5rem;
+}
+
+.projects .project-left img {
+  width: 50%;
+  height: 50%;
+  margin: 0rem 1rem;
+  border-radius: 5px;
+}
+
+.projects .project-right {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid var(--button-border-grey);
+  border-radius: 5px;
+  align-items: center;
+  width: 35rem;
+  margin-bottom: 0.5rem;
+}
+
+.projects .project-right img {
+  width: 50%;
+  height: 50%;
+  margin: 0rem 1rem;
+  border-radius: 5px;
+}
+
+.projects .project-content {
+  margin: 1rem 1rem;
+}
+
+.projects .project-content h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.projects .project-content p {
+  margin: 0.5rem 0rem;
+  font-size: 0.9rem;
+  color: var(--list-white);
+}
+
+.projects .project-content ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  font-family: var(--tech-stack);
+  font-size: 0.9rem;
+  color: var(--text-white);
+}
+
+.projects .project-content ul > li {
+  margin: 0rem 0.5rem 0.5rem 0rem;
+}
+
+.projects .btn-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 1rem;
+}
+
+.projects .btn-group button.disabled {
+  color: var(--divider-grey);
+}
+
+.projects .btn-group button.disabled:hover {
+  color: var(--divider-grey);
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.projects .btn-group button {
+  color: var(--white);
+  background-color: transparent;
+  border: 0.5px solid var(--button-border-grey);
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-family: var(--text);
+  font-weight: 500;
+  margin-right: 0.1rem;
+  padding: 0.5rem;
+}
+
+.projects .btn-group button:hover {
+  background-color: var(--button-hover-grey);
+  cursor: pointer;
+}
+
+.projects .btn-group button i {
+  margin-right: 0.4rem;
+}
+
 /* END OF PROJECTS.HTML  */
 
 /* CONTACT.HTML  */
