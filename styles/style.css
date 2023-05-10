@@ -390,6 +390,39 @@ hr {
 
 /* CONTACT.HTML  */
 
+.contact {
+  margin: 1.5rem 0rem;
+}
+
+.contact .contact-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-width: 35rem;
+}
+
+.contact .contact-buttons button {
+  color: var(--white);
+  background-color: transparent;
+  border: 0.5px solid var(--button-border-grey);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: var(--text);
+  font-weight: 500;
+  padding: 1rem 1rem 1rem 2rem;
+  margin: 0rem 0.5rem 0.5rem 0rem;
+  text-align: left;
+}
+
+.contact .contact-buttons button:hover {
+  background-color: var(--button-hover-grey);
+  cursor: pointer;
+}
+
+.contact .contact-buttons button i {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
 /* END OF CONTACT.HTML  */
 
 /* BREAK POINT - decrease margin at 1280px */
@@ -431,7 +464,17 @@ hr {
     margin-bottom: 1rem;
   }
 
-  /* end of about */
+  .contact .contact-buttons {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    margin-bottom: 1rem;
+    min-width: 20rem;
+  }
+
+  .contact .contact-buttons button {
+    padding-left: 3rem;
+    text-align: left;
+  }
 }
 
 /* BREAK POINT - change the structure for mobile devices */
