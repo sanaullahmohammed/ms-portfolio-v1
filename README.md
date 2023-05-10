@@ -1,2 +1,3 @@
-# ms-portfolio-v1
+# Mohammed Sanaullah Portfolio
+
 First iteration of my portfolio
