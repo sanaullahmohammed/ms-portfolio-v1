@@ -43,7 +43,6 @@ body {
 .nav-menu {
   margin-top: -1rem;
   position: fixed;
-  margin-right: 2rem;
 }
 
 .logo {
@@ -90,7 +89,7 @@ body {
 /* MAIN SECTION - Common to all pages  */
 
 .main {
-  margin-left: 5rem;
+  margin-left: 8rem;
 }
 
 .main h1 {
