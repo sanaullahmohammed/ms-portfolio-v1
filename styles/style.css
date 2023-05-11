@@ -42,6 +42,8 @@ body {
 
 .nav-menu {
   margin-top: -1rem;
+  position: fixed;
+  margin-right: 2rem;
 }
 
 .logo {
@@ -523,6 +525,7 @@ hr {
   .nav-menu {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
 
   .nav-bar ul {
